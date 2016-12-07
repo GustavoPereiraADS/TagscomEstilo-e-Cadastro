@@ -1,0 +1,386 @@
+<html>
+	<head>
+		<title>Exemplos tags HTML com CSS</title>
+		
+		<meta charset="UTF-8" />
+		
+		<style>
+			body{
+				background: #aabbbb;
+				font-family:"comic sans";
+			}
+			
+			h1,h2,h3,h4,h5,h6 {
+				text-align: center;
+			}
+			
+			p{
+				letter-spacing: 1px;
+				
+				word-spacing:   2px;
+				
+				line-height:   30px;
+				
+				text-align: justify;
+				
+			}
+			
+			#paragrafo2{ 
+				text-align: center;
+			}
+			
+			
+			.lista-tracejada {
+				border: dashed 2px black;
+			}
+			
+			.lista-colorida {
+				/*background: #ffffaa;*/
+			}
+			
+			ol li{
+				list-style-type: lower-alpha;
+				padding-left: 1px;
+				margin-left: 500px;
+			}
+			
+			#menu{
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				background: #aaffaa;
+			}
+			
+			#menu li{
+				padding: 15px 30px 15px 30px;
+				display: inline-block;
+				text-align: center;
+				overflow: hidden;
+			}
+			
+			#menu li a:hover{
+				background: #44ff44
+			}
+			
+			#menu li a{
+				padding: 80px;
+				border: none;
+				
+			}
+			
+			a{
+				text-decoration: none;
+				color: #000000;
+				font-weight: bold;
+				border-bottom: dotted 2px orange;
+			}
+			
+			a:hover, a:visited{
+				background: #cceecc;
+				color:#ffffff;
+			}
+			
+			#hellworld{
+				float: right;
+			}
+			
+			table{
+				width: 50%;
+				margin: 0px auto;
+				border-collapse: collapse;
+			}
+			
+			thead{
+				background: #bbbbbb;
+				
+			}
+			
+			caption{
+				font-size: 12px;
+			}
+			
+			td{
+				text-align: center;
+			}
+			
+			tr{
+				border-bottom: solid 1px #bbbbbb;
+				height: 25px;
+			}
+			
+			tr:last-child{
+				border-bottom: none;
+			}
+			
+			tbody tr:hover{
+				background: #ffffff;
+			}
+			
+			fieldset{
+				border: solid 5px #228822;
+				padding: 10px;
+				width: 300px;
+				line-height: 20px;
+			}
+			
+			legend{
+				font-size: 18px;
+				font-weight: bold;
+			}
+			
+			input{
+				display: block;
+				border: solid 1px black;
+				padding: 5px;
+				margin-bottom: 20px;
+				
+			}
+			
+			input[type="checkbox"], input[type="radio"]{
+				high: 25px;
+				display: inline-block;
+				vertical-align: middle;
+				cursor: pointer;
+				margin-bottom: 0px;
+			}
+			
+			input:focus{
+				background: #ffffcc;
+				border
+			}
+			
+			
+			
+			
+		</style>
+		
+		<script type="text/javascript"></script>
+	</head>
+<body>
+
+	<figure>
+			<img src="img.jpg" width="500" height="200" alt="helloworld">
+	</figure>
+		
+	<h1 id="texto1">Título 1</h1>
+	<h2>Título 2 </h2>
+	<h3>Título 3 </h3>
+	<h4>Título 4</h4>
+	<h5>Título 5</h5>
+	<h6>Título 6</h6>
+	
+	
+	<p>Parágrafo 1:JISDNVJKSDVN JVNJVNFJIKDFGNFDJVNUOJN  ISFJVAKOJSDOJ JIDJN DIKFAOPKWE,FRMWEOKOV EJKFSLÇD;JFOUIDHGIODAN
+	</P>
+	
+	<hr/>
+	
+	<p id="paragrafo2">Parágrafo 2:JISDNVJKSDVN JVNJVNFJIKDFGNFDJVNUOJN  ISFJVA</br>KOJSDOJ JIDJN DIKFAOPKWE,FRMWEOKOV EJKFSLÇD;JFOUIDHGIODAN
+	</P>
+	
+	<hr/>
+	
+	<p>Parágrafo 3:JISDNVJKSDVN JVNJVNFJIKDFGNFDJVNUOJN  ISFJVAKOJSDOJ JIDJN DIKFAOPKWE,FRMWEOKOV EJKFSLÇD;JFOUIDHGIODAN
+	</P>
+	
+	<!-- COMEN
+	TÁRIO -->
+	
+	<hr/>
+	<br/>
+	<br/> 
+	<br/>
+	<br/>
+	
+	<h1>Listas</h1>
+	
+		<h2> Lista não ordenada</h2>
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+	
+		<h2>Lista ordenada</h2>
+		<ol class="lista-tracejada">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ol>
+		
+		<h2>Lista ordenada 2</h2>
+		<ol >
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ol>
+		
+		<h2>Lista ordenada 3</h2>
+			<ol class="lista-tracejada lista-colorida">
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+			</ol>
+		
+		
+		<h2> Lista - Menu</h2>
+		<ul id="menu">
+			<li><a href="#">Link 1</a></li> 
+			<li><a href="#">Link 2</a></li> 
+			<li><a href="#">Link 3</a></li> 
+			<li><a href="#">Link 4</a></li> 
+		</ul>
+		
+		
+	
+	<hr/>
+	
+	<h1>Outras Tags</h1>
+		<a href="#texto1">Não clique aqui</a>
+		<br/>
+		<a href="#paragrafo2">Clique Aqui</a>
+		<br/>
+		<a href="HelloWorld.html" target="_blank" target="alt">Hello Word!</a>
+		<br/>
+		<figure>
+			<img src="img.jpg" width="500" height="200" alt="helloworld">
+			<figcaption>hello world!</figcaption>
+		</figure>
+		<br/>
+	<hr/>
+	
+	<h1>Tabelas</h1>
+		<table>
+			<caption>
+				Pessoas
+			</caption>
+			<thead>
+				<th>Numero</th>
+				<th>Nome</th>
+				<th>Bairro</th>
+			</thead>
+				<tr>
+					<td>1</td>
+					<td>Arlindo</td>
+					<td>Kobrasol</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td><img src="img.jpg" width="50" height="20" alt="helloworld"></td>
+					<td>Campinas</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Josué</td>
+					<td>Forquilinhas</td>
+				</tr>
+			
+		</table>
+	</hr>
+	
+	
+	
+	<h1>Formulários</h1>
+		<form action="">
+			<fieldset>
+					<legend> Dados Pessoais</legend>
+					
+				<div>	
+					<label for="nome">Nome: </label>
+						<input type="text" id="nome" placeholder="Preencha seu nome"/>
+				</div>
+				
+				<div>	
+					<label for="email">E-mail: </label>
+						<input type="email" id="email"/>
+				</div>
+				
+				<div>	
+					<label for="senha">Senha: </label>
+						<input type="password" id="senha"/>
+				</div>	
+				
+				<div>	
+					<label for="data">Data: </label>
+						<input type="date" id="data"/>
+				</div>	
+				
+				<div>				
+					<label for="cor">Cor: </label>
+						<input type="color" id="cor"/>
+				</div>
+				
+				<div>
+					Bairro:
+						<select id="bairro">
+							<option>Kobrasol</option>
+							<option>Campinas</option>
+							<option>Forquilinhas</option>
+							<option>Bela Vista</option>
+							<option>Jardim Atlântico</option>
+							<option selected="selected">Outro</option>
+						</select>
+				</div>	
+				
+				<div>
+					Interesses (censurado): 
+						<div>
+							<input type="checkbox" id="interesse"/> Coca-Cola
+						</div>
+						
+						<div>
+							<input type="checkbox" id="interesse"/> Pureza
+						</div>
+						
+						<div>
+							<input type="checkbox" id="interesse"/> Dolly (Mito)
+						</div>
+						
+						<div>
+							<input type="checkbox" id="interesse"/> Pepsi
+						</div>
+						
+						<div>
+							<input type="checkbox" id="interesse"/> Agua
+						</div>
+				</div>
+				<div>	
+					Idade:
+						<div>
+							<input type="radio" name="idade"/>0-18
+						</div>
+						
+						<div>
+							<input type="radio" name="idade"/>18-36
+						</div>
+						
+						<div>
+							<input type="radio" name="idade"/>36-50
+						</div>
+						
+						<div>
+							<input type="radio" name="idade"/>50+
+						</div>
+				</div>
+				
+					
+				Observações:
+					
+					<textarea cols="40" rows"5" id="textarea" placeholder="3 magic wall"> </textarea>
+					
+				
+				<input type="hidden" name="nomeOculto" value="valorOculto"/>
+				<br/>
+				
+				<!-- BOTÃO ENVIAR -->
+				<input type="submit" value="Enviar"/>
+				<br/>
+				<br/>
+				
+				<!-- BOTÃO RESET -->
+				<input type="reset" value="Resetar"/>
+				
+			</fieldset>
+		</form>
+</body>
+</html>

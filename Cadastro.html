@@ -1,0 +1,253 @@
+<html>
+	<head>
+		<title>Cadastro</title>
+		
+		<meta charset="UTF-8" />
+		
+		<style>
+			body{
+				background: #aabbbb;
+				font-family:"comic sans";
+			}
+			
+			h1,h2,h3,h4,h5,h6 {
+				text-align: center;
+			}
+			
+			p{
+				letter-spacing: 1px;
+				
+				word-spacing:   2px;
+				
+				line-height:   30px;
+				
+				text-align: justify;
+				
+			}
+			
+			#paragrafo2{ 
+				text-align: center;
+			}
+			
+			
+			.lista-tracejada {
+				border: dashed 2px black;
+			}
+			
+			.lista-colorida {
+				/*background: #ffffaa;*/
+			}
+			
+			ol li{
+				list-style-type: lower-alpha;
+				padding-left: 1px;
+				margin-left: 500px;
+			}
+			
+			#menu{
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				background: #aaffaa;
+			}
+			
+			#menu li{
+				padding: 15px 30px 15px 30px;
+				display: inline-block;
+				text-align: center;
+				overflow: hidden;
+			}
+			
+			#menu li a:hover{
+				background: #44ff44
+			}
+			
+			#menu li a{
+				padding: 80px;
+				border: none;
+				
+			}
+			
+			a{
+				text-decoration: none;
+				color: #000000;
+				font-weight: bold;
+				border-bottom: dotted 2px orange;
+			}
+			
+			a:hover, a:visited{
+				background: #cceecc;
+				color:#ffffff;
+			}
+			
+			#hellworld{
+				float: right;
+			}
+			
+			table{
+				width: 50%;
+				margin: 0px auto;
+				border-collapse: collapse;
+			}
+			
+			thead{
+				background: #bbbbbb;
+				
+			}
+			
+			caption{
+				font-size: 12px;
+			}
+			
+			td{
+				text-align: center;
+			}
+			
+			tr{
+				border-bottom: solid 1px #bbbbbb;
+				height: 25px;
+			}
+			
+			tr:last-child{
+				border-bottom: none;
+			}
+			
+			tbody tr:hover{
+				background: #ffffff;
+			}
+			
+			fieldset{
+				border: solid 5px #228822;
+				padding: 10px;
+				width: 300px;
+				line-height: 20px;
+			}
+			
+			legend{
+				font-size: 18px;
+				font-weight: bold;
+			}
+			
+			input{
+				display: block;
+				border: solid 1px black;
+				padding: 5px;
+				margin-bottom: 20px;
+				
+			}
+			
+			input[type="checkbox"], input[type="radio"]{
+				high: 25px;
+				display: inline-block;
+				vertical-align: middle;
+				cursor: pointer;
+				margin-bottom: 0px;
+			}
+			
+			input:focus{
+				background: #ffffcc;
+				border
+			}
+			
+			
+			
+			
+		</style>
+		
+		<script type="text/javascript"></script>
+	</head>
+<body>		
+	<h1 id="texto1">Drink Book</h1>
+	<h1>Pessoas Cadastradas</h1>
+		<table>
+			<thead>
+				<th>Numero</th>
+				<th>Nome</th>
+				<th>Interesses</th>
+			</thead>
+				<tr>
+					<td>1</td>
+					<td>Fulano</td>
+					<td>Refrigerante</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Ciclano</td>
+					<td>Agua</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Beltrano</td>
+					<td>Cerveja</td>
+				</tr>
+			
+		</table>
+	</hr>
+	
+	
+	<form action="">
+		<fieldset>
+			<legend>Cadastro</legend>
+				
+				<div>	
+					<label for="nome">Nome: </label>
+						<input type="text" id="nome" placeholder="Preencha seu nome"/>
+				</div>
+						
+				<div>	
+					<label for="data">Data de Nascimento: </label>
+						<input type="date" id="data"/>
+				</div>	
+				
+				<div>	
+					Estado:
+						<div>
+							<input type="radio" name="idade"/>SC
+						</div>
+						
+						<div>
+							<input type="radio" name="idade"/>RS
+						</div>
+						
+						<div>
+							<input type="radio" name="idade"/>PR
+						</div>
+				</div>
+				
+				</br>
+				
+				<div>
+					Interesses: 
+						<div>
+							<input type="checkbox" id="interesse"/> Cerveja
+						</div>
+						
+						<div>
+							<input type="checkbox" id="interesse"/> Vodka
+						</div>
+						
+						<div>
+							<input type="checkbox" id="interesse"/> Refrigerante
+						</div>
+						
+						<div>
+							<input type="checkbox" id="interesse"/> Agua
+						</div>
+						</br>
+				</div>
+				
+				
+				<div>			
+					
+					<!-- BOTÃO ENVIAR -->
+					<input type="submit" value="Enviar"/>
+					
+					
+					<!-- BOTÃO RESET -->
+					<input type="reset" value="Resetar"/>
+				</div>
+				
+			</fieldset>
+		</form>
+</body>
+</html>
